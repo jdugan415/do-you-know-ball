@@ -4,7 +4,13 @@ Research date: September 10, 2026.
 
 Version 0.3 update: all 32 teams now use the shared portrait widget. The Steelers retain official-site image URLs; the other teams use headshot URLs associated with player IDs in NFLverse's 2026 roster data. The importer and app accept only HTTPS images from `static.clubs.nfl.com`, `static.www.nfl.com`, or `a.espncdn.com`. Twelve players have no accepted photo URL. See [data sources](data-sources.md) for the per-team import process and attribution. The provider evaluation below records the earlier research; no paid photo service is integrated.
 
-## Recommendation
+## Portrait framing
+
+All quiz and results portraits share `PlayerPortrait`. NFL-hosted images request a 400px square from the original asset with `c_thumb,g_face,z_0.65`: face detection centers the subject, with a looser crop to retain hair and shoulders. Existing low-resolution thumbnail transforms are removed. See [Cloudinary face-focused cropping](https://cloudinary.com/documentation/image_gravity). The source URL and attribution remain unchanged in roster data.
+
+If a transformed image fails, the widget retries the original URL, then shows the placeholder. Other hosts keep their original image with a centered square crop. Face detection can vary by source photo; this is a shared automatic framing rule, not a manual review of every player.
+
+## Provider recommendation
 
 Keep the initial quiz offline with jersey-number/position clues. Use SportsDataIO as the first provider to evaluate for a publicly distributed photo feature because its documentation explicitly describes licensed NFL headshots. Obtain a quote and verify the proposed app use and player coverage before integration. No paid services have been purchased and no provider key is needed for version 0.1.
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../player.dart';
+import '../portrait_url.dart';
 
 /// Fixed-size portraits keep the page stable during loading and errors.
 /// Names are deliberately excluded from quiz image semantics.
@@ -16,6 +17,17 @@ class PlayerPortrait extends StatelessWidget {
   final double size;
   final bool revealName;
   final ImageProvider? imageProvider;
+
+  Widget _image(ImageProvider provider, {String? originalUrl}) => Image(
+    key: ValueKey('${player.id}:$provider'),
+    image: provider,
+    fit: BoxFit.cover,
+    alignment: Alignment.center,
+    frameBuilder: (context, child, frame, synchronous) =>
+        frame == null ? _fallback() : child,
+    errorBuilder: (context, error, stack) =>
+        originalUrl == null ? _fallback() : _image(NetworkImage(originalUrl)),
+  );
 
   Widget _fallback() => ColoredBox(
     color: const Color(0xFF2D332B),
@@ -42,13 +54,13 @@ class PlayerPortrait extends StatelessWidget {
           height: size,
           child: player.photoUrl == null && imageProvider == null
               ? _fallback()
-              : Image(
-                  key: ValueKey(player.id),
-                  image: imageProvider ?? NetworkImage(player.photoUrl!),
-                  fit: BoxFit.cover,
-                  frameBuilder: (context, child, frame, synchronous) =>
-                      frame == null ? _fallback() : child,
-                  errorBuilder: (context, error, stack) => _fallback(),
+              : _image(
+                  imageProvider ?? NetworkImage(portraitUrl(player.photoUrl!)),
+                  originalUrl:
+                      imageProvider == null &&
+                          portraitUrl(player.photoUrl!) != player.photoUrl
+                      ? player.photoUrl
+                      : null,
                 ),
         ),
       ),
