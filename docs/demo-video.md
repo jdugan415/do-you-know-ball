@@ -8,7 +8,7 @@ Suggested length: 2–3 minutes, unless the professor specifies otherwise.
 
 | Segment | Show | Explain |
 | --- | --- | --- |
-| Introduction | App title and Steelers selection | A Flutter app that tests knowledge of an NFL team's players. |
+| Introduction | App title, team search, AFC/NFC filters | A Flutter app that tests knowledge of all 32 NFL teams. |
 | Start a round | Start Steelers quiz | Ten distinct random players from a dated roster snapshot. |
 | Answer questions | Jersey number, position, four names | Answers lock after selection and show immediate feedback. Include one correct and one incorrect answer. |
 | Finish | Complete all ten questions and open results | Score out of ten and the answer review. Speed up repetitive questions during editing if necessary. |
@@ -26,4 +26,4 @@ Suggested length: 2–3 minutes, unless the professor specifies otherwise.
 - [ ] Verify the professor can view the link without requesting access.
 - [ ] Mark the demo tasks complete in TASKS.md.
 
-The video should demonstrate the features currently implemented. Player photos, saved scores, and additional teams are future work.
+The video should demonstrate the features currently implemented: all 32 teams, player photos with fallbacks, scoring, and roster snapshot refresh. Saved scores remain future work.

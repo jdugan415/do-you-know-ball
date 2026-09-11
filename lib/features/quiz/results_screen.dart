@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../app.dart' show gold;
+import '../../core/app_theme.dart' show gold;
 import '../roster/roster_repository.dart';
 import '../roster/widgets/player_portrait.dart';
 import 'quiz_screen.dart';
@@ -44,8 +44,8 @@ class ResultsScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 12),
-              const Text(
-                'Pittsburgh Steelers • Round complete',
+              Text(
+                '${roster.team} • Round complete',
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 24),

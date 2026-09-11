@@ -2,19 +2,19 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import 'roster_repository.dart';
+import 'roster.dart';
+import '../teams/team.dart';
 
 /// Consumes the reviewed public snapshot, not HTML inside the mobile app.
 class RosterApi {
   const RosterApi({this.client, this.timeout = const Duration(seconds: 10)});
   final http.Client? client;
   final Duration timeout;
-  static final endpoint = Uri.https(
-    'raw.githubusercontent.com',
-    '/jdugan415/do-you-know-ball/main/assets/rosters/steelers.json',
-  );
-
-  Future<Roster> fetchSteelers() async {
+  Future<Roster> fetch(NflTeam team) async {
+    final endpoint = Uri.https(
+      'raw.githubusercontent.com',
+      '/jdugan415/do-you-know-ball/main/assets/rosters/${team.file}',
+    );
     final connection = client ?? http.Client();
     try {
       final response = await connection.get(endpoint).timeout(timeout);
@@ -23,7 +23,9 @@ class RosterApi {
       }
       final json =
           jsonDecode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
-      if (json['schemaVersion'] != 1 || json['teamId'] != 'PIT') {
+      if (json['schemaVersion'] != 1 ||
+          json['teamId'] != team.id ||
+          json['team'] != team.name) {
         throw const FormatException('Unsupported roster version or team');
       }
       return Roster.fromJson(json);

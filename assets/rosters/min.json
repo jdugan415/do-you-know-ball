@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 1,
+  "teamId": "MIN",
+  "team": "Minnesota Vikings",
+  "updated": "2026-09-10",
+  "source": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+  "season": 2026,
+  "scope": "NFLverse ACT players with valid, unique number/position clues",
+  "excludedPlayers": 0,
+  "dataCredit": "NFLverse roster data, CC BY 4.0; filtered and transformed for this quiz",
+  "players": [
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "number": 33,
+      "position": "RB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/bktkfvgfwujkdbzkcfim",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0029714",
+      "name": "Andrew DePaola",
+      "number": 42,
+      "position": "LS",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zvvseyjneba7ehms6pd9",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0035272",
+      "name": "Andrew Van Ginkel",
+      "number": 43,
+      "position": "LB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vbpdlib647tcpzz59wyt",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0036347",
+      "name": "Blake Brandel",
+      "number": 64,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pahzsehwe1mplzelu3wl",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0035276",
+      "name": "Blake Cashman",
+      "number": 51,
+      "position": "LB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mvui8tjkoewkupyncbok",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0039718",
+      "name": "Bo Richter",
+      "number": 98,
+      "position": "LB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/kbhux5tafk9i4lqkcmtn",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041581",
+      "name": "Brett Thorson",
+      "number": 19,
+      "position": "P",
+      "photoUrl": null,
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": null
+    },
+    {
+      "id": "00-0034158",
+      "name": "Brian O'Neill",
+      "number": 75,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ouq6nfernugv9rsvcvwm",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0035236",
+      "name": "Byron Murphy",
+      "number": 7,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/secfzfwznyhcgiow4rvq",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041033",
+      "name": "Caleb Banks",
+      "number": 95,
+      "position": "DL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/kn0vbk3i04hyepp7phmb",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041053",
+      "name": "Caleb Tiernan",
+      "number": 78,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/wp0lu3cuqnu47gn3gmo1",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0032950",
+      "name": "Carson Wentz",
+      "number": 11,
+      "position": "QB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vuolixdvigc8axelug66",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041083",
+      "name": "Charles Demmings",
+      "number": 20,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xqpfpwzaotawvch1v4ok",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040496",
+      "name": "Chaz Chambliss",
+      "number": 32,
+      "position": "LB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/wwuawbggpxurztrxyyuh",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0036616",
+      "name": "Christian Darrisaw",
+      "number": 71,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/czyibprjejmeflivtgzb",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0039924",
+      "name": "Dallas Turner",
+      "number": 15,
+      "position": "LB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/k9buimhpd1q6la5pdxs3",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041104",
+      "name": "Demond Claiborne",
+      "number": 21,
+      "position": "RB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vmozbbdzgcaqq1yrixeb",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041046",
+      "name": "Domonique Orange",
+      "number": 97,
+      "position": "DL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/o2druy2qqi3nkcbj9ns6",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040661",
+      "name": "Donovan Jackson",
+      "number": 74,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xurpqjpbr0arxuxqanhb",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040624",
+      "name": "Elijah Williams",
+      "number": 99,
+      "position": "DL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jdad4ub2ljy6hynzxmb4",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0033336",
+      "name": "Eric Wilson",
+      "number": 55,
+      "position": "LB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xp5tifhe6rxrdz4rsm2f",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040215",
+      "name": "Gavin Bartholomew",
+      "number": 86,
+      "position": "TE",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vezjblfvo9gduiyonlum",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0029606",
+      "name": "Harrison Smith",
+      "number": 22,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/kadw1bk0cxsarjrwbdrq",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0036222",
+      "name": "Isaiah Rodgers",
+      "number": 2,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ukadn9uyrajapqo6gxuj",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0038807",
+      "name": "Ivan Pace Jr.",
+      "number": 0,
+      "position": "LB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/til1eiumoueha3mnindj",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0039923",
+      "name": "J.J. McCarthy",
+      "number": 9,
+      "position": "QB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/omybnfokapjw6jwb5dd3",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041354",
+      "name": "Jacob Thomas",
+      "number": 29,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xme4nohvydgpjnj6gpge",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041495",
+      "name": "Jake Golday",
+      "number": 41,
+      "position": "LB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xxquil9cdqnjwqiwrj4h",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041054",
+      "name": "Jakobe Thomas",
+      "number": 8,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/lhdrccjr1nefeeqnuzo7",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0038778",
+      "name": "Jalen Redmond",
+      "number": 61,
+      "position": "DL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/y4m9ssdlqb8i7zgmo7tl",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0035795",
+      "name": "James Pierre",
+      "number": 23,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ejlisynlop21gglz3zbh",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0036259",
+      "name": "Jauan Jennings",
+      "number": 14,
+      "position": "WR",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ben8kbygzzlid6ltmdum",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0038578",
+      "name": "Jay Ward",
+      "number": 24,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dwljd5ukdc8pzy3l5vju",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040500",
+      "name": "Joe Huber",
+      "number": 60,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/uyx7yhbqffwghbe517dy",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0038994",
+      "name": "Jordan Addison",
+      "number": 3,
+      "position": "WR",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mi4lzk9gvjrvo6rwdf1e",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0037525",
+      "name": "Jordan Mason",
+      "number": 27,
+      "position": "RB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/qeeucinnxl8mpzaw23hc",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0036348",
+      "name": "Josh Metellus",
+      "number": 44,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/gmb2ahv4eq0jphammw2h",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0035249",
+      "name": "Josh Oliver",
+      "number": 84,
+      "position": "TE",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/awdb5xedlbq0ebpptgzb",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0036322",
+      "name": "Justin Jefferson",
+      "number": 18,
+      "position": "WR",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/htjevkugzk6ietrjysny",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0035228",
+      "name": "Kyler Murray",
+      "number": 1,
+      "position": "QB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/btfruyf33adgnjzpcuen",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0039421",
+      "name": "Levi Drake Rodriguez",
+      "number": 50,
+      "position": "DL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/omsedg4telmr0fvhhegj",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0041081",
+      "name": "Max Bredeson",
+      "number": 45,
+      "position": "RB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/fl3inwpzgb7fgzpaezw1",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040506",
+      "name": "Myles Price",
+      "number": 4,
+      "position": "WR",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/yi2pgwujy0lv9l3m3sig",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0039237",
+      "name": "Nick Samac",
+      "number": 62,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/asndmhzpbeviehlnuxgl",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0037404",
+      "name": "Ryan Van Demark",
+      "number": 72,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/gcnwaxoqw1ys3dpxs6xf",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0035229",
+      "name": "T.J. Hockenson",
+      "number": 87,
+      "position": "TE",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/rs8o65x0u0n9xzde0fd6",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040154",
+      "name": "Tai Felton",
+      "number": 13,
+      "position": "WR",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pyritorbaz2enqayclln",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0037301",
+      "name": "Theo Jackson",
+      "number": 26,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/bn0zvntbfmhw7yki2xr4",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0039310",
+      "name": "Trevor Keegan",
+      "number": 69,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/op65y3hhnmtpcdumopmt",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040173",
+      "name": "Tyrion Ingram-Dawkins",
+      "number": 90,
+      "position": "DL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/lkpgbo1ftwfrp18wrbxv",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0036483",
+      "name": "Will Fries",
+      "number": 76,
+      "position": "OL",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/o1mom4lvhbd7yltnneyh",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0039404",
+      "name": "Will Reichard",
+      "number": 16,
+      "position": "K",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/wv1h4umuddkfss96uutw",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    },
+    {
+      "id": "00-0040507",
+      "name": "Zemaiah Vaughn",
+      "number": 5,
+      "position": "DB",
+      "photoUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ko8yku7d4usn5sm0nuf9",
+      "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+      "photoCredit": "Photo: NFL / source via NFLverse"
+    }
+  ]
+}

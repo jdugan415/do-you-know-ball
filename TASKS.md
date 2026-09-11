@@ -34,6 +34,7 @@
 - [x] Add official Steelers-hosted portrait URLs with fallbacks and attribution.
 - [x] Add a validated NFL roster importer and published-snapshot refresh.
 - [ ] Confirm image rights before commercial or store distribution.
-- [ ] Add additional NFL teams.
+- [x] Add all 32 NFL teams, searchable selection, and AFC/NFC filters.
+- [x] Validate all 32 rosters and 320 complete randomized rounds.
 - [ ] Save personal best scores.
 - [ ] Add custom launcher icons and production release signing.

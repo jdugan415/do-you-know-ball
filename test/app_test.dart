@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:do_you_know_ball/app.dart';
 import 'package:do_you_know_ball/features/roster/roster_repository.dart';
+import 'package:do_you_know_ball/features/teams/team.dart';
 
 Future<void> tapVisible(WidgetTester tester, Finder finder) async {
   await tester.scrollUntilVisible(
@@ -33,6 +34,17 @@ void main() {
 
     await tester.pumpWidget(BallApp(repository: TestRosterRepository()));
     await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'Steelers');
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('team-PIT')),
+      200,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.ensureVisible(find.byKey(const ValueKey('team-PIT')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('team-PIT')));
+    await tester.pumpAndSettle();
     await tapVisible(tester, find.text('Start Steelers quiz →'));
     for (var i = 0; i < 10; i++) {
       await tapVisible(tester, find.byKey(const ValueKey('answer-0')));
@@ -56,12 +68,12 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('Keep playing'));
     await tester.pumpAndSettle();
-    expect(find.text('Steelers challenge'), findsOneWidget);
+    expect(find.text('Pittsburgh Steelers challenge'), findsOneWidget);
     await tester.tap(find.byTooltip('Leave quiz'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Leave'));
     await tester.pumpAndSettle();
-    expect(find.text('DYKB / FOOTBALL'), findsOneWidget);
+    expect(find.text('Start Steelers quiz →'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
   testWidgets('small screen and large text remain usable', (tester) async {
@@ -74,6 +86,17 @@ void main() {
 
     await tester.pumpWidget(BallApp(repository: TestRosterRepository()));
     await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'Steelers');
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('team-PIT')),
+      200,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.ensureVisible(find.byKey(const ValueKey('team-PIT')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('team-PIT')));
+    await tester.pumpAndSettle();
     await tapVisible(tester, find.text('Start Steelers quiz →'));
     await tapVisible(tester, find.byKey(const ValueKey('answer-0')));
     expect(tester.takeException(), isNull);
@@ -82,8 +105,13 @@ void main() {
 
 class TestRosterRepository extends RosterRepository {
   @override
-  Future<Roster> loadSteelers() async => Roster.fromJson(
-    jsonDecode(File('assets/rosters/steelers.json').readAsStringSync())
+  Future<List<NflTeam>> loadTeams() async =>
+      (jsonDecode(File('assets/teams.json').readAsStringSync()) as List)
+          .map((t) => NflTeam.fromJson(t as Map<String, dynamic>))
+          .toList();
+  @override
+  Future<Roster> load(NflTeam team) async => Roster.fromJson(
+    jsonDecode(File('assets/rosters/${team.file}').readAsStringSync())
         as Map<String, dynamic>,
   );
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../app.dart' show gold;
+import '../../core/app_theme.dart' show gold;
 import '../roster/roster_repository.dart';
 import '../roster/widgets/player_portrait.dart';
 import 'quiz_session.dart';
@@ -58,7 +58,7 @@ class _QuizScreenState extends State<QuizScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Steelers challenge'),
+          title: Text('${widget.roster.team} challenge'),
           leading: IconButton(
             onPressed: _confirmExit,
             icon: const Icon(Icons.close),
@@ -96,7 +96,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   ),
                   const SizedBox(height: 28),
                   const Text(
-                    'Who is this Steeler?',
+                    'Who is this player?',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900),
                   ),
                   const SizedBox(height: 18),
@@ -114,9 +114,10 @@ class _QuizScreenState extends State<QuizScreen> {
                       children: [
                         PlayerPortrait(player: question.player),
                         const SizedBox(height: 14),
-                        const Text(
-                          'P I T T S B U R G H',
-                          style: TextStyle(
+                        Text(
+                          widget.roster.team.toUpperCase(),
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
                             color: gold,
                             fontWeight: FontWeight.w800,
                           ),
