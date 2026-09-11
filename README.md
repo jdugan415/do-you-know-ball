@@ -2,6 +2,18 @@
 
 A Flutter football knowledge app. Choose Pittsburgh, identify 10 random active players by jersey number and position, and review your score.
 
+## Course submission
+
+| Requirement | Deliverable |
+| --- | --- |
+| Demo video | **Pending recording.** [Recording outline](docs/demo-video.md) |
+| Task list | [Completed and remaining tasks](TASKS.md) |
+| Automated build | [GitHub Actions runs](https://github.com/jdugan415/do-you-know-ball/actions/workflows/flutter.yml) |
+
+[![Flutter build](https://github.com/jdugan415/do-you-know-ball/actions/workflows/flutter.yml/badge.svg)](https://github.com/jdugan415/do-you-know-ball/actions/workflows/flutter.yml)
+
+Each push and pull request runs formatting checks, analysis, tests, web compilation, and an Android debug build. To download the APK, open a successful Actions run and select **do-you-know-ball-android** under **Artifacts** (GitHub sign-in may be required). Unzip it to obtain `app-debug.apk`. Artifacts are retained for 30 days; use **Run workflow** to produce a fresh build. This development APK is suitable for demonstration, not a Play Store release.
+
 ## Run in Android Studio
 
 1. Open this project folder (the folder containing `pubspec.yaml`), not just `android/`.
@@ -65,7 +77,7 @@ flutter test
 flutter build apk --debug
 ```
 
-GitHub Actions runs formatting, analysis, tests, and web compilation on pushes and pull requests.
+GitHub Actions runs the checks and builds described in the course submission section above.
 
 ## Next milestones
 

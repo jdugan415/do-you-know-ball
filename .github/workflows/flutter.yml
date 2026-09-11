@@ -1,14 +1,20 @@
-name: Flutter checks
+name: Flutter checks and Android build
 on:
   push:
   pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.47.2'
@@ -19,3 +25,12 @@ jobs:
       - run: flutter analyze
       - run: flutter test
       - run: flutter build web
+      - name: Build Android demo APK
+        run: flutter build apk --debug
+      - name: Upload Android APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: do-you-know-ball-android
+          path: build/app/outputs/flutter-apk/app-debug.apk
+          if-no-files-found: error
+          retention-days: 30
