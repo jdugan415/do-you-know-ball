@@ -1,0 +1,380 @@
+{
+  "team": "Pittsburgh Steelers",
+  "teamId": "PIT",
+  "updated": "2026-09-10",
+  "source": "https://www.steelers.com/team/players-roster/",
+  "scope": "Active section only; excludes reserve and practice squad",
+  "players": [
+    {
+      "id": "drew-allar",
+      "name": "Drew Allar",
+      "number": 16,
+      "position": "QB",
+      "photoUrl": null
+    },
+    {
+      "id": "spencer-anderson",
+      "name": "Spencer Anderson",
+      "number": 74,
+      "position": "OL",
+      "photoUrl": null
+    },
+    {
+      "id": "keeanu-benton",
+      "name": "Keeanu Benton",
+      "number": 95,
+      "position": "DT",
+      "photoUrl": null
+    },
+    {
+      "id": "germie-bernard",
+      "name": "Germie Bernard",
+      "number": 17,
+      "position": "WR",
+      "photoUrl": null
+    },
+    {
+      "id": "yahya-black",
+      "name": "Yahya Black",
+      "number": 94,
+      "position": "DL",
+      "photoUrl": null
+    },
+    {
+      "id": "chris-boswell",
+      "name": "Chris Boswell",
+      "number": 9,
+      "position": "K",
+      "photoUrl": null
+    },
+    {
+      "id": "jaquan-brisker",
+      "name": "Jaquan Brisker",
+      "number": 3,
+      "position": "S",
+      "photoUrl": null
+    },
+    {
+      "id": "carson-bruener",
+      "name": "Carson Bruener",
+      "number": 44,
+      "position": "LB",
+      "photoUrl": null
+    },
+    {
+      "id": "dylan-cook",
+      "name": "Dylan Cook",
+      "number": 60,
+      "position": "OT",
+      "photoUrl": null
+    },
+    {
+      "id": "jamel-dean",
+      "name": "Jamel Dean",
+      "number": 35,
+      "position": "CB",
+      "photoUrl": null
+    },
+    {
+      "id": "rico-dowdle",
+      "name": "Rico Dowdle",
+      "number": 13,
+      "position": "RB",
+      "photoUrl": null
+    },
+    {
+      "id": "gennings-dunker",
+      "name": "Gennings Dunker",
+      "number": 73,
+      "position": "G",
+      "photoUrl": null
+    },
+    {
+      "id": "brandin-echols",
+      "name": "Brandin Echols",
+      "number": 26,
+      "position": "CB",
+      "photoUrl": null
+    },
+    {
+      "id": "daylen-everette",
+      "name": "Daylen Everette",
+      "number": 23,
+      "position": "CB",
+      "photoUrl": null
+    },
+    {
+      "id": "troy-fautanu",
+      "name": "Troy Fautanu",
+      "number": 76,
+      "position": "OT",
+      "photoUrl": null
+    },
+    {
+      "id": "zach-frazier",
+      "name": "Zach Frazier",
+      "number": 54,
+      "position": "C",
+      "photoUrl": null
+    },
+    {
+      "id": "pat-freiermuth",
+      "name": "Pat Freiermuth",
+      "number": 88,
+      "position": "TE",
+      "photoUrl": null
+    },
+    {
+      "id": "derrick-harmon",
+      "name": "Derrick Harmon",
+      "number": 99,
+      "position": "DT",
+      "photoUrl": null
+    },
+    {
+      "id": "eli-heidenreich",
+      "name": "Eli Heidenreich",
+      "number": 29,
+      "position": "RB/WR",
+      "photoUrl": null
+    },
+    {
+      "id": "nick-herbig",
+      "name": "Nick Herbig",
+      "number": 51,
+      "position": "LB",
+      "photoUrl": null
+    },
+    {
+      "id": "cameron-heyward",
+      "name": "Cameron Heyward",
+      "number": 97,
+      "position": "DT",
+      "photoUrl": null
+    },
+    {
+      "id": "alex-highsmith",
+      "name": "Alex Highsmith",
+      "number": 56,
+      "position": "LB",
+      "photoUrl": null
+    },
+    {
+      "id": "brock-hoffman",
+      "name": "Brock Hoffman",
+      "number": 67,
+      "position": "G",
+      "photoUrl": null
+    },
+    {
+      "id": "cole-holcomb",
+      "name": "Cole Holcomb",
+      "number": 55,
+      "position": "LB",
+      "photoUrl": null
+    },
+    {
+      "id": "will-howard",
+      "name": "Will Howard",
+      "number": 18,
+      "position": "QB",
+      "photoUrl": null
+    },
+    {
+      "id": "max-iheanachor",
+      "name": "Max Iheanachor",
+      "number": 71,
+      "position": "OT",
+      "photoUrl": null
+    },
+    {
+      "id": "rayshawn-jenkins",
+      "name": "Rayshawn Jenkins",
+      "number": 20,
+      "position": "S",
+      "photoUrl": null
+    },
+    {
+      "id": "kevin-jobity-jr",
+      "name": "Kevin Jobity Jr.",
+      "number": 92,
+      "position": "DL",
+      "photoUrl": null
+    },
+    {
+      "id": "cameron-johnston",
+      "name": "Cameron Johnston",
+      "number": 19,
+      "position": "P",
+      "photoUrl": null
+    },
+    {
+      "id": "sebastian-joseph-day",
+      "name": "Sebastian Joseph-Day",
+      "number": 69,
+      "position": "DT",
+      "photoUrl": null
+    },
+    {
+      "id": "christian-kuntz",
+      "name": "Christian Kuntz",
+      "number": 46,
+      "position": "LS",
+      "photoUrl": null
+    },
+    {
+      "id": "ryan-mccollum",
+      "name": "Ryan McCollum",
+      "number": 62,
+      "position": "C",
+      "photoUrl": null
+    },
+    {
+      "id": "mason-mccormick",
+      "name": "Mason McCormick",
+      "number": 66,
+      "position": "G",
+      "photoUrl": null
+    },
+    {
+      "id": "dk-metcalf",
+      "name": "DK Metcalf",
+      "number": 4,
+      "position": "WR",
+      "photoUrl": null
+    },
+    {
+      "id": "riley-nowakowski",
+      "name": "Riley Nowakowski",
+      "number": 37,
+      "position": "FB",
+      "photoUrl": null
+    },
+    {
+      "id": "michael-pittman-jr",
+      "name": "Michael Pittman Jr.",
+      "number": 11,
+      "position": "WR",
+      "photoUrl": null
+    },
+    {
+      "id": "joey-porter-jr",
+      "name": "Joey Porter Jr.",
+      "number": 24,
+      "position": "CB",
+      "photoUrl": null
+    },
+    {
+      "id": "patrick-queen",
+      "name": "Patrick Queen",
+      "number": 6,
+      "position": "LB",
+      "photoUrl": null
+    },
+    {
+      "id": "jalen-ramsey",
+      "name": "Jalen Ramsey",
+      "number": 5,
+      "position": "CB",
+      "photoUrl": null
+    },
+    {
+      "id": "aaron-rodgers",
+      "name": "Aaron Rodgers",
+      "number": 8,
+      "position": "QB",
+      "photoUrl": null
+    },
+    {
+      "id": "gabriel-rubio",
+      "name": "Gabriel Rubio",
+      "number": 96,
+      "position": "DE",
+      "photoUrl": null
+    },
+    {
+      "id": "mason-rudolph",
+      "name": "Mason Rudolph",
+      "number": 2,
+      "position": "QB",
+      "photoUrl": null
+    },
+    {
+      "id": "asante-samuel-jr",
+      "name": "Asante Samuel Jr.",
+      "number": 22,
+      "position": "CB",
+      "photoUrl": null
+    },
+    {
+      "id": "jack-sawyer",
+      "name": "Jack Sawyer",
+      "number": 33,
+      "position": "LB",
+      "photoUrl": null
+    },
+    {
+      "id": "ben-skowronek",
+      "name": "Ben Skowronek",
+      "number": 15,
+      "position": "WR",
+      "photoUrl": null
+    },
+    {
+      "id": "robert-spears-jennings",
+      "name": "Robert Spears-Jennings",
+      "number": 28,
+      "position": "S",
+      "photoUrl": null
+    },
+    {
+      "id": "robert-tonyan",
+      "name": "Robert Tonyan",
+      "number": 85,
+      "position": "TE",
+      "photoUrl": null
+    },
+    {
+      "id": "jaylen-warren",
+      "name": "Jaylen Warren",
+      "number": 30,
+      "position": "RB",
+      "photoUrl": null
+    },
+    {
+      "id": "darnell-washington",
+      "name": "Darnell Washington",
+      "number": 80,
+      "position": "TE",
+      "photoUrl": null
+    },
+    {
+      "id": "t-j-watt",
+      "name": "T.J. Watt",
+      "number": 90,
+      "position": "LB",
+      "photoUrl": null
+    },
+    {
+      "id": "kaden-wetjen",
+      "name": "Kaden Wetjen",
+      "number": 10,
+      "position": "WR",
+      "photoUrl": null
+    },
+    {
+      "id": "payton-wilson",
+      "name": "Payton Wilson",
+      "number": 41,
+      "position": "LB",
+      "photoUrl": null
+    },
+    {
+      "id": "roman-wilson",
+      "name": "Roman Wilson",
+      "number": 14,
+      "position": "WR",
+      "photoUrl": null
+    }
+  ]
+}
