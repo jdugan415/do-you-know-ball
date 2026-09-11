@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../app.dart' show gold;
 import '../roster/roster_repository.dart';
+import '../roster/widgets/player_portrait.dart';
 import 'quiz_screen.dart';
 import 'quiz_session.dart';
 
@@ -75,6 +76,12 @@ class ResultsScreen extends StatelessWidget {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        PlayerPortrait(
+                          player: question.player,
+                          size: 48,
+                          revealName: true,
+                        ),
+                        const SizedBox(width: 10),
                         Icon(
                           session.answers[i] == question.player.id
                               ? Icons.check_circle_outline

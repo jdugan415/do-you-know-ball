@@ -1,4 +1,5 @@
 {
+  "schemaVersion": 1,
   "team": "Pittsburgh Steelers",
   "teamId": "PIT",
   "updated": "2026-09-10",
@@ -10,371 +11,477 @@
       "name": "Drew Allar",
       "number": 16,
       "position": "QB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/mevccjthpsdltrmu3211.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/drew-allar/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "spencer-anderson",
       "name": "Spencer Anderson",
       "number": 74,
       "position": "OL",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/romtzmjzqr03why207kh.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/spencer-anderson/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "keeanu-benton",
       "name": "Keeanu Benton",
       "number": 95,
       "position": "DT",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/sbh3djzacpefbqbnhsjt.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/keeanu-benton/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "germie-bernard",
       "name": "Germie Bernard",
       "number": 17,
       "position": "WR",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/zpmw2p6eqzp2aporvhvp.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/germie-bernard/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "yahya-black",
       "name": "Yahya Black",
       "number": 94,
       "position": "DL",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/kkrchzm8jorslnw2lc7z.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/yahya-black/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "chris-boswell",
       "name": "Chris Boswell",
       "number": 9,
       "position": "K",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/wuz8pnsxx1k8d9ekgqa6.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/chris-boswell/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "jaquan-brisker",
       "name": "Jaquan Brisker",
       "number": 3,
       "position": "S",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/itzlahdbdl5tptpeiaip.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/jaquan-brisker/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "carson-bruener",
       "name": "Carson Bruener",
       "number": 44,
       "position": "LB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/qmfpmssbzlgpogxcybir.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/carson-bruener/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "dylan-cook",
       "name": "Dylan Cook",
       "number": 60,
       "position": "OT",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/dn0f4m7nfrtswbyllrq7.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/dylan-cook/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "jamel-dean",
       "name": "Jamel Dean",
       "number": 35,
       "position": "CB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/vb8dsdbscuuqn1gvaej2.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/jamel-dean/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "rico-dowdle",
       "name": "Rico Dowdle",
       "number": 13,
       "position": "RB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/bkuqyhenf6nwyrzmbxvc.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/rico-dowdle/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "gennings-dunker",
       "name": "Gennings Dunker",
       "number": 73,
       "position": "G",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/ggosnaf3izykyvf4vnbv.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/gennings-dunker/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "brandin-echols",
       "name": "Brandin Echols",
       "number": 26,
       "position": "CB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/jqldnepqpkjtv5l1bchh.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/brandin-echols/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "daylen-everette",
       "name": "Daylen Everette",
       "number": 23,
       "position": "CB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/ultwmuw2zsp8a5b3gghr.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/daylen-everette/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "troy-fautanu",
       "name": "Troy Fautanu",
       "number": 76,
       "position": "OT",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/mfngr9uxx1dwq82maaso.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/troy-fautanu/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "zach-frazier",
       "name": "Zach Frazier",
       "number": 54,
       "position": "C",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/wiq1c6jhupzlhjt5zofi.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/zach-frazier/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "pat-freiermuth",
       "name": "Pat Freiermuth",
       "number": 88,
       "position": "TE",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/ycqggssbxb88a5ipszol.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/pat-freiermuth/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "derrick-harmon",
       "name": "Derrick Harmon",
       "number": 99,
       "position": "DT",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/dvt407ptoxhabdy7p0hg.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/derrick-harmon/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "eli-heidenreich",
       "name": "Eli Heidenreich",
       "number": 29,
       "position": "RB/WR",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/hvjnxlwzpi1w8a4f1igq.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/eli-heidenreich/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "nick-herbig",
       "name": "Nick Herbig",
       "number": 51,
       "position": "LB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/vkchahqzidt9mi4brgks.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/nick-herbig/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "cameron-heyward",
       "name": "Cameron Heyward",
       "number": 97,
       "position": "DT",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/ejx1zjbtbzowez7j7vmi.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/cameron-heyward/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "alex-highsmith",
       "name": "Alex Highsmith",
       "number": 56,
       "position": "LB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/spk5cbkhkykb6kbuvsu0.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/alex-highsmith/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "brock-hoffman",
       "name": "Brock Hoffman",
       "number": 67,
       "position": "G",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/emghox4cw83idyin92pg.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/brock-hoffman/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "cole-holcomb",
       "name": "Cole Holcomb",
       "number": 55,
       "position": "LB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/guqq9r31kquafjk5emwe.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/cole-holcomb/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "will-howard",
       "name": "Will Howard",
       "number": 18,
       "position": "QB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/ztguguyemkapom6ezgm9.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/will-howard/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "max-iheanachor",
       "name": "Max Iheanachor",
       "number": 71,
       "position": "OT",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/le4mluuddxl02qbfalnv.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/max-iheanachor/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "rayshawn-jenkins",
       "name": "Rayshawn Jenkins",
       "number": 20,
       "position": "S",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/oibclbvshrdxseqycaij.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/rayshawn-jenkins/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "kevin-jobity-jr",
       "name": "Kevin Jobity Jr.",
       "number": 92,
       "position": "DL",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/qbjbvrax4cprme7nhozm.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/kevin-jobity-jr/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "cameron-johnston",
       "name": "Cameron Johnston",
       "number": 19,
       "position": "P",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/yzxnn5ybhmxr2g3rrv6i.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/cameron-johnston/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "sebastian-joseph-day",
       "name": "Sebastian Joseph-Day",
       "number": 69,
       "position": "DT",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/z4tfdtn1svr7rkjonx75.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/sebastian-joseph-day/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "christian-kuntz",
       "name": "Christian Kuntz",
       "number": 46,
       "position": "LS",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/zwjiaxjgh68macqtpjvt.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/christian-kuntz/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "ryan-mccollum",
       "name": "Ryan McCollum",
       "number": 62,
       "position": "C",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/pzdvafuseppujsvz8xut.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/ryan-mccollum/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "mason-mccormick",
       "name": "Mason McCormick",
       "number": 66,
       "position": "G",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/umio0ki2lujbfymsnsoa.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/mason-mccormick/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "dk-metcalf",
       "name": "DK Metcalf",
       "number": 4,
       "position": "WR",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/xwvm1rzbpbeqcvmjfrx1.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/dk-metcalf/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "riley-nowakowski",
       "name": "Riley Nowakowski",
       "number": 37,
       "position": "FB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/gedpxux4tdrzmmois46g.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/riley-nowakowski/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "michael-pittman-jr",
       "name": "Michael Pittman Jr.",
       "number": 11,
       "position": "WR",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/i0mgz4emmzmehvg0ogkb.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/michael-pittman-jr/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "joey-porter-jr",
       "name": "Joey Porter Jr.",
       "number": 24,
       "position": "CB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/dy3a4qbu5dxs8vpusdgg.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/joey-porter-jr/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "patrick-queen",
       "name": "Patrick Queen",
       "number": 6,
       "position": "LB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/anscy252dblwizczvyyk.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/patrick-queen/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "jalen-ramsey",
       "name": "Jalen Ramsey",
       "number": 5,
       "position": "CB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/z0ec7jqwdrk2pvprdjzy.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/jalen-ramsey/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "aaron-rodgers",
       "name": "Aaron Rodgers",
       "number": 8,
       "position": "QB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/jdumyasnngnpp6uwiyhw.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/aaron-rodgers/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "gabriel-rubio",
       "name": "Gabriel Rubio",
       "number": 96,
       "position": "DE",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/zehgqjaclp66wbsrrndl.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/gabriel-rubio/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "mason-rudolph",
       "name": "Mason Rudolph",
       "number": 2,
       "position": "QB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/vdx3bqvg3wganhajiwle.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/mason-rudolph/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "asante-samuel-jr",
       "name": "Asante Samuel Jr.",
       "number": 22,
       "position": "CB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/is1igjwwc8zhm8tyqxwm.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/asante-samuel-jr/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "jack-sawyer",
       "name": "Jack Sawyer",
       "number": 33,
       "position": "LB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/zfeis4sbrhvzt5bbwkmw.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/jack-sawyer/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "ben-skowronek",
       "name": "Ben Skowronek",
       "number": 15,
       "position": "WR",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/w3omgqw4xnljrm0wyuir.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/ben-skowronek/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "robert-spears-jennings",
       "name": "Robert Spears-Jennings",
       "number": 28,
       "position": "S",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/tneajphrsj18ydxr0qv9.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/robert-spears-jennings-x6972/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "robert-tonyan",
       "name": "Robert Tonyan",
       "number": 85,
       "position": "TE",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/oocj7s66srbabpvjenpa.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/robert-tonyan/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "jaylen-warren",
       "name": "Jaylen Warren",
       "number": 30,
       "position": "RB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/tbgio66sfc7aqj4u4ir1.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/jaylen-warren/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "darnell-washington",
       "name": "Darnell Washington",
       "number": 80,
       "position": "TE",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/ouvdx3zce3sliwxgh6r8.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/darnell-washington/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "t-j-watt",
       "name": "T.J. Watt",
       "number": 90,
       "position": "LB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/csk5b5wktoywhfkenc0p.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/t-j-watt/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "kaden-wetjen",
       "name": "Kaden Wetjen",
       "number": 10,
       "position": "WR",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/sldjrz76uqzrefmatugv.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/kaden-wetjen/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "payton-wilson",
       "name": "Payton Wilson",
       "number": 41,
       "position": "LB",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/huanbjeg7nhmakb4lavk.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/payton-wilson/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     },
     {
       "id": "roman-wilson",
       "name": "Roman Wilson",
       "number": 14,
       "position": "WR",
-      "photoUrl": null
+      "photoUrl": "https://static.clubs.nfl.com/image/upload/t_thumb_squared/f_auto/steelers/ejmbvlpe5byxoounuhnz.jpg",
+      "sourceUrl": "https://www.steelers.com/team/players-roster/roman-wilson/",
+      "photoCredit": "Photo: Pittsburgh Steelers / NFL"
     }
   ]
 }

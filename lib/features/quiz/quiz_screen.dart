@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../app.dart' show gold;
 import '../roster/roster_repository.dart';
+import '../roster/widgets/player_portrait.dart';
 import 'quiz_session.dart';
 import 'results_screen.dart';
 
@@ -95,7 +96,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   ),
                   const SizedBox(height: 28),
                   const Text(
-                    'Who wears this number?',
+                    'Who is this Steeler?',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900),
                   ),
                   const SizedBox(height: 18),
@@ -111,6 +112,8 @@ class _QuizScreenState extends State<QuizScreen> {
                     ),
                     child: Column(
                       children: [
+                        PlayerPortrait(player: question.player),
+                        const SizedBox(height: 14),
                         const Text(
                           'P I T T S B U R G H',
                           style: TextStyle(
@@ -124,7 +127,7 @@ class _QuizScreenState extends State<QuizScreen> {
                           child: Text(
                             '${question.player.number}',
                             style: const TextStyle(
-                              fontSize: 88,
+                              fontSize: 56,
                               height: 1.3,
                               fontWeight: FontWeight.w900,
                               color: gold,
@@ -138,6 +141,16 @@ class _QuizScreenState extends State<QuizScreen> {
                             letterSpacing: 2,
                           ),
                         ),
+                        if (question.player.photoCredit != null) ...[
+                          const SizedBox(height: 12),
+                          Text(
+                            question.player.photoCredit!,
+                            style: const TextStyle(
+                              fontSize: 11,
+                              color: Color(0xFFB8BEBD),
+                            ),
+                          ),
+                        ],
                       ],
                     ),
                   ),

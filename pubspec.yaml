@@ -1,10 +1,11 @@
 name: do_you_know_ball
 description: A ten-player NFL roster quiz, starting with Pittsburgh.
 publish_to: none
-version: 0.1.0+1
+version: 0.2.0+2
 environment:
   sdk: ^3.13.2
 dependencies:
+  http: ^1.6.0
   flutter:
     sdk: flutter
 dev_dependencies:

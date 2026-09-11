@@ -38,6 +38,8 @@ On this computer Flutter is installed at `C:\Users\jackj\develop\flutter`. Until
 - Answers lock after selection; correct answer is shown immediately.
 - Score, full answer review, replay, and exit confirmation.
 - Offline play; no account, API key, analytics, or backend required.
+- NFL-hosted Steelers portraits with loading and offline fallbacks.
+- A validated roster importer and optional published-snapshot refresh.
 - Scrollable layouts and accessible answer feedback.
 
 ## Project organization
@@ -61,11 +63,13 @@ docs/                              Data and photo-provider research
 
 The UI reads a `Roster` from `RosterRepository`; `QuizSession` operates on that roster independently of the data source. To add a team, provide the same JSON schema, add it to `pubspec.yaml`, expose its repository loader, and add a selection card. Replace Steelers-specific screen copy when expanding beyond this first team.
 
+The roster refresh button checks the latest reviewed JSON snapshot on GitHub. The app never scrapes the NFL site directly. To update data, run `python tools/rosters/import_steelers.py`, review the diff, run tests, and commit the new snapshot. The importer intentionally fails closed when the official page structure changes.
+
 ## Data
 
 The 53 active players were transcribed from the [official Steelers roster](https://www.steelers.com/team/players-roster/) on September 10, 2026. Reserve and practice squad players are excluded. This is a dated snapshot, not a live roster feed. Before refreshing, verify team membership, jersey numbers, and positions; preserve IDs and update the snapshot date. Validation rejects duplicate players and ambiguous number/position clues.
 
-Photos are not bundled or displayed in this version. The optional `photoUrl` model field is ready for a future verified source. See [photo research](docs/player-photos.md).
+Photos are loaded from the NFL/Steelers image host with a neutral fallback. See [photo research](docs/player-photos.md) for rights and provider details.
 
 ## Checks
 

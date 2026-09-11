@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 import 'player.dart';
+import 'roster_api.dart';
 
 class Roster {
   Roster({
@@ -11,7 +12,18 @@ class Roster {
     required this.source,
     required List<Player> players,
   }) : players = List.unmodifiable(players) {
+    final date = DateTime.tryParse(updated);
+    if (team != 'Pittsburgh Steelers' ||
+        source != 'https://www.steelers.com/team/players-roster/' ||
+        date == null ||
+        date.toIso8601String().substring(0, 10) != updated ||
+        date.isAfter(DateTime.now().add(const Duration(days: 1)))) {
+      throw const FormatException(
+        'Invalid roster identity, source or snapshot date',
+      );
+    }
     if (players.length < 10 ||
+        players.length > 100 ||
         players.map((p) => p.id).toSet().length != players.length ||
         players.map((p) => p.name).toSet().length != players.length ||
         players.map((p) => '${p.number}:${p.position}').toSet().length !=
@@ -22,6 +34,7 @@ class Roster {
     }
   }
   final String team;
+  String get teamId => team == 'Pittsburgh Steelers' ? 'PIT' : '';
   final String updated;
   final String source;
   final List<Player> players;
@@ -36,7 +49,17 @@ class Roster {
 }
 
 class RosterRepository {
-  const RosterRepository();
+  const RosterRepository({this.api = const RosterApi()});
+  final RosterApi api;
+  Future<Roster> refreshSteelers(Roster current) async {
+    final refreshed = await api.fetchSteelers();
+    if (DateTime.parse(refreshed.updated)
+        .isBefore(DateTime.parse(current.updated))) {
+      throw const FormatException('Received an older roster');
+    }
+    return refreshed;
+  }
+
   Future<Roster> loadSteelers() async => Roster.fromJson(
     jsonDecode(await rootBundle.loadString('assets/rosters/steelers.json'))
         as Map<String, dynamic>,

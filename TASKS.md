@@ -31,8 +31,9 @@
 
 ## Future improvements (outside the initial submission scope)
 
-- [ ] Add verified player photos with a suitable provider.
+- [x] Add official Steelers-hosted portrait URLs with fallbacks and attribution.
+- [x] Add a validated NFL roster importer and published-snapshot refresh.
+- [ ] Confirm image rights before commercial or store distribution.
 - [ ] Add additional NFL teams.
-- [ ] Add a roster refresh process.
 - [ ] Save personal best scores.
 - [ ] Add custom launcher icons and production release signing.

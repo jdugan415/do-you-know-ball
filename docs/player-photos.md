@@ -38,4 +38,11 @@ A GET to `https://www.thesportsdb.com/api/v1/json/123/searchplayers.php?p=T.J.%2
 6. Keep quiz-image semantic labels neutral (for example, 'Mystery player') so accessibility text does not reveal the answer. Show names and attribution in the results review.
 7. Test missing/broken URLs, offline mode, slow responses, player trades, expired provider access, identity mismatch, and fewer than ten available portraits.
 
-Version 0.1 only adds an optional validated HTTPS `photoUrl` field to the model; there is no live provider integration or photo quiz mode yet.
+## Implemented in version 0.2
+
+- `tools/rosters/import_steelers.py` fetches one Active table from Steelers.com, honors its `robots.txt`, rejects changed or incomplete markup, preserves stable IDs, and writes a temporary file before replacing the snapshot.
+- The checked-in snapshot now has 53 official NFL-hosted portrait URLs plus the individual Steelers profile URL and a visible credit string for each player.
+- `RosterApi` retrieves only the reviewed JSON snapshot published in this repository. The app keeps its bundled snapshot when GitHub is unavailable and never scrapes HTML inside the mobile app.
+- Portraits use fixed dimensions, loading placeholders, and a fallback icon. Broken images do not prevent the number/position quiz from working.
+
+The portrait URLs are reachable and source-hosted, but availability does not automatically grant permission for every kind of distribution. Before monetizing or publishing broadly, confirm NFL/Steelers image rights or obtain licensed headshots from SportsDataIO. A public fan project should retain attribution and be prepared to remove images if the rights holder requests it.

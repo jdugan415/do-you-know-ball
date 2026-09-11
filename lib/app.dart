@@ -48,6 +48,33 @@ class TeamScreen extends StatefulWidget {
 
 class _TeamScreenState extends State<TeamScreen> {
   late Future<Roster> _roster;
+  bool _refreshing = false;
+
+  Future<void> _refresh(Roster current) async {
+    setState(() => _refreshing = true);
+    try {
+      final refreshed = await widget.repository.refreshSteelers(current);
+      if (!mounted) return;
+      setState(() => _roster = Future.value(refreshed));
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Latest published roster loaded for this session.'),
+        ),
+      );
+    } catch (_) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Update unavailable. Your current roster is still ready to play.',
+          ),
+        ),
+      );
+    } finally {
+      if (mounted) setState(() => _refreshing = false);
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -183,6 +210,15 @@ class _TeamScreenState extends State<TeamScreen> {
                       ],
                     ),
                   ),
+                  TextButton.icon(
+                    onPressed: _refreshing ? null : () => _refresh(roster),
+                    icon: const Icon(Icons.refresh),
+                    label: Text(
+                      _refreshing
+                          ? 'Checking for updates…'
+                          : 'Check roster updates',
+                    ),
+                  ),
                   const SizedBox(height: 20),
                   FilledButton(
                     onPressed: () => Navigator.of(context).push(
@@ -203,7 +239,7 @@ class _TeamScreenState extends State<TeamScreen> {
                   ),
                   const SizedBox(height: 12),
                   const Text(
-                    'Identify each player by jersey number and position. Pick one of four names, then review your score.',
+                    'Use the portrait, jersey number, and position to identify each player. Photos need internet; number and position clues work offline.',
                     style: TextStyle(color: Color(0xFFB8BEBD), height: 1.6),
                   ),
                   const SizedBox(height: 24),
