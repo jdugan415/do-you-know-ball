@@ -22,11 +22,15 @@ class QuizQuestion {
 
 /// Pure Dart quiz rules, independent of Flutter and data providers.
 class QuizSession {
-  QuizSession(
+  QuizDifficulty get difficulty => _difficulty;
+  QuizDifficulty _difficulty = QuizDifficulty.medium;
+
+  QuizSession.withDifficulty(
     Roster roster, {
-    this.difficulty = QuizDifficulty.medium,
+    required QuizDifficulty difficulty,
     Random? random,
   }) {
+    _difficulty = difficulty;
     final rng = random ?? Random();
     final pool = List<Player>.of(roster.players)..shuffle(rng);
     questions = List.unmodifiable(
@@ -42,7 +46,20 @@ class QuizSession {
       }),
     );
   }
-  final QuizDifficulty difficulty;
+
+  QuizSession(Roster roster, {Random? random}) {
+    final rng = random ?? Random();
+    final pool = List<Player>.of(roster.players)..shuffle(rng);
+    questions = List.unmodifiable(
+      pool.take(10).map((player) {
+        final distractors =
+            roster.players.where((p) => p.id != player.id).toList()
+              ..shuffle(rng);
+        final options = [player, ...distractors.take(3)]..shuffle(rng);
+        return QuizQuestion(player, options);
+      }),
+    );
+  }
   late final List<QuizQuestion> questions;
   final List<String> _answers = [];
   int _index = 0;

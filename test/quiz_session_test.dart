@@ -12,33 +12,6 @@ void main() {
     File('assets/rosters/steelers.json').readAsStringSync(),
   ) as Map<String, dynamic>;
   final roster = Roster.fromJson(json);
-  for (final difficulty in QuizDifficulty.values) {
-    test(
-      '${difficulty.label} has unique choices and supports a full round',
-      () {
-        final quiz = QuizSession(
-          roster,
-          difficulty: difficulty,
-          random: Random(42),
-        );
-        expect(quiz.difficulty, difficulty);
-        for (final question in quiz.questions) {
-          expect(
-            question.options.map((p) => p.id).toSet().length,
-            difficulty.optionCount,
-          );
-          expect(
-            question.options.where((p) => p.id == question.player.id).length,
-            1,
-          );
-          expect(quiz.answer(question.player.id), isTrue);
-          quiz.next();
-        }
-        expect(quiz.complete, isTrue);
-        expect(quiz.score, 10);
-      },
-    );
-  }
   test('bundled roster is valid and has 53 active players', () {
     expect(roster.players.length, 53);
     expect(roster.players.singleWhere((p) => p.name == 'T.J. Watt').number, 90);

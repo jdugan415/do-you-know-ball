@@ -7,22 +7,14 @@ import 'quiz_session.dart';
 import 'results_screen.dart';
 
 class QuizScreen extends StatefulWidget {
-  const QuizScreen({
-    super.key,
-    required this.roster,
-    this.difficulty = QuizDifficulty.medium,
-  });
+  const QuizScreen({super.key, required this.roster});
   final Roster roster;
-  final QuizDifficulty difficulty;
   @override
   State<QuizScreen> createState() => _QuizScreenState();
 }
 
 class _QuizScreenState extends State<QuizScreen> {
-  late final QuizSession session = QuizSession(
-    widget.roster,
-    difficulty: widget.difficulty,
-  );
+  late final QuizSession session = QuizSession(widget.roster);
   bool _leaving = false;
   bool _dialogOpen = false;
 
@@ -96,8 +88,8 @@ class _QuizScreenState extends State<QuizScreen> {
                       Text('${session.score} correct'),
                     ],
                   ),
-                  Text('${session.difficulty.label} difficulty'),
                   const SizedBox(height: 12),
+                  Text('${session.difficulty.label} difficulty'),
                   LinearProgressIndicator(
                     value: (session.index + 1) / 10,
                     minHeight: 5,
@@ -274,4 +266,28 @@ class _QuizScreenState extends State<QuizScreen> {
       ),
     );
   }
+}
+
+/// Additional modes reuse the original quiz UI and answer flow.
+class DifficultyQuizScreen extends QuizScreen {
+  const DifficultyQuizScreen({
+    super.key,
+    required super.roster,
+    required this.difficulty,
+  });
+
+  final QuizDifficulty difficulty;
+
+  @override
+  State<QuizScreen> createState() => _DifficultyQuizScreenState();
+}
+
+class _DifficultyQuizScreenState extends _QuizScreenState {
+  @override
+  QuizSession get session => _difficultySession;
+
+  late final QuizSession _difficultySession = QuizSession.withDifficulty(
+    widget.roster,
+    difficulty: (widget as DifficultyQuizScreen).difficulty,
+  );
 }

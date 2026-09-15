@@ -45,17 +45,35 @@ class ResultsScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               Text(
-                '${roster.team} • ${session.difficulty.label} • Round complete',
+                '${roster.team} • Round complete',
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 24),
+              Text(
+                '${session.difficulty.label} difficulty',
+                textAlign: TextAlign.center,
+              ),
+              if (session.difficulty != QuizDifficulty.medium)
+                FilledButton(
+                  onPressed: () => Navigator.of(context).pushReplacement(
+                    MaterialPageRoute<void>(
+                      builder: (_) => DifficultyQuizScreen(
+                        roster: roster,
+                        difficulty: session.difficulty,
+                      ),
+                    ),
+                  ),
+                  child: Text('Play ${session.difficulty.label} again →'),
+                ),
+              if (session.difficulty != QuizDifficulty.medium)
+                const Text(
+                  'Or play the original Medium round below.',
+                  textAlign: TextAlign.center,
+                ),
               FilledButton(
                 onPressed: () => Navigator.of(context).pushReplacement(
                   MaterialPageRoute<void>(
-                    builder: (_) => QuizScreen(
-                      roster: roster,
-                      difficulty: session.difficulty,
-                    ),
+                    builder: (_) => QuizScreen(roster: roster),
                   ),
                 ),
                 child: const Text('Play another round →'),

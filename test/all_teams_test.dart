@@ -81,7 +81,7 @@ void main() {
         find.text(i == 9 ? 'See results →' : 'Next player →'),
       );
     }
-    expect(find.text('Dallas Cowboys • Medium • Round complete'), findsOneWidget);
+    expect(find.text('Dallas Cowboys • Round complete'), findsOneWidget);
     await tapVisible(tester, find.text('Back to teams'));
     expect(find.text('DYKB / FOOTBALL'), findsOneWidget);
     await tester.tap(find.byTooltip('Clear search'));

@@ -21,7 +21,6 @@ class TeamDetailScreen extends StatefulWidget {
 class _TeamDetailScreenState extends State<TeamDetailScreen> {
   late Future<Roster> _roster;
   bool _refreshing = false;
-  QuizDifficulty _difficulty = QuizDifficulty.medium;
   @override
   void initState() {
     super.initState();
@@ -128,36 +127,38 @@ class _TeamDetailScreenState extends State<TeamDetailScreen> {
                   ),
                   const SizedBox(height: 20),
                   const Text(
-                    'DIFFICULTY',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 2,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: [
-                      for (final difficulty in QuizDifficulty.values)
-                        ChoiceChip(
-                          label: Text(difficulty.label),
-                          selected: _difficulty == difficulty,
-                          onSelected: (_) =>
-                              setState(() => _difficulty = difficulty),
-                        ),
-                    ],
+                    'CHOOSE DIFFICULTY',
+                    style: TextStyle(fontWeight: FontWeight.w800),
                   ),
                   const SizedBox(height: 8),
-                  Text(
-                    '${_difficulty.optionCount} answer choices per player. Portrait, jersey number, and position clues included.',
+                  const Text(
+                    'Easy: 2 choices • Medium: 4 choices • Hard: 6 choices',
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 12),
+                  for (final difficulty in [
+                    QuizDifficulty.easy,
+                    QuizDifficulty.hard,
+                  ])
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: OutlinedButton(
+                        onPressed: () => Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (_) => DifficultyQuizScreen(
+                              roster: roster,
+                              difficulty: difficulty,
+                            ),
+                          ),
+                        ),
+                        child: Text('Start ${difficulty.label} quiz →'),
+                      ),
+                    ),
+                  const Text('Medium • Original quiz'),
+                  const SizedBox(height: 8),
                   FilledButton(
                     onPressed: () => Navigator.of(context).push(
                       MaterialPageRoute<void>(
-                        builder: (_) =>
-                            QuizScreen(roster: roster, difficulty: _difficulty),
+                        builder: (_) => QuizScreen(roster: roster),
                       ),
                     ),
                     child: Text('Start ${widget.team.nickname} quiz →'),
