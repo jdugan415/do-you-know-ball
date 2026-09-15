@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../core/app_theme.dart';
+import '../quiz/daily_challenge_card.dart';
+import '../quiz/daily_gift_banner.dart';
 import '../roster/roster_repository.dart';
 import 'team.dart';
 import 'team_detail_screen.dart';
@@ -31,6 +33,31 @@ class _TeamScreenState extends State<TeamScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
+      actions: [
+        IconButton(
+          style: IconButton.styleFrom(
+            backgroundColor: gold,
+            foregroundColor: ink,
+            hoverColor: const Color(0xFFFFDF85),
+            highlightColor: const Color(0xFFFFB61D),
+            minimumSize: const Size(48, 48),
+            padding: const EdgeInsets.all(12),
+            side: const BorderSide(color: Color(0xFFFFE6A1)),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+          ),
+          tooltip: 'Daily challenge',
+          icon: const Icon(Icons.today),
+          onPressed: () => Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) =>
+                  DailyChallengeScreen(repository: widget.repository),
+            ),
+          ),
+        ),
+      ],
+      actionsPadding: const EdgeInsets.only(right: 12),
       title: const Text(
         'DYKB / FOOTBALL',
         style: TextStyle(
@@ -53,6 +80,8 @@ class _TeamScreenState extends State<TeamScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      DailyGiftBanner(repository: widget.repository),
+                      const SizedBox(height: 24),
                       const Text(
                         'Do you know ball?',
                         style: TextStyle(

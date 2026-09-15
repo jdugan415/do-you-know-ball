@@ -69,6 +69,8 @@ void main() {
     expect(find.text('No teams found. Try another search.'), findsOneWidget);
     await tester.tap(find.widgetWithText(ChoiceChip, 'NFC'));
     await tester.pumpAndSettle();
+    await tester.ensureVisible(find.byKey(const ValueKey('team-DAL')));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('team-DAL')));
     await tester.pumpAndSettle();
     await tapVisible(tester, find.text('Start Cowboys quiz →'));

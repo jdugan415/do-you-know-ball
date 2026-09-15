@@ -5,6 +5,7 @@ import '../roster/roster_repository.dart';
 import '../roster/widgets/player_portrait.dart';
 import 'quiz_session.dart';
 import 'results_screen.dart';
+import 'daily_challenge.dart';
 
 class QuizScreen extends StatefulWidget {
   const QuizScreen({super.key, required this.roster});
@@ -89,6 +90,11 @@ class _QuizScreenState extends State<QuizScreen> {
                     ],
                   ),
                   const SizedBox(height: 12),
+                  Text('${session.difficulty.label} difficulty'),
+                  if (session is DailyQuizSession)
+                    Text(
+                      'Daily challenge • ${(session as DailyQuizSession).challenge.label} UTC',
+                    ),
                   LinearProgressIndicator(
                     value: (session.index + 1) / 10,
                     minHeight: 5,
@@ -265,4 +271,51 @@ class _QuizScreenState extends State<QuizScreen> {
       ),
     );
   }
+}
+
+/// Additional modes reuse the original quiz UI and answer flow.
+class DifficultyQuizScreen extends QuizScreen {
+  const DifficultyQuizScreen({
+    super.key,
+    required super.roster,
+    required this.difficulty,
+  });
+
+  final QuizDifficulty difficulty;
+
+  @override
+  State<QuizScreen> createState() => _DifficultyQuizScreenState();
+}
+
+class _DifficultyQuizScreenState extends _QuizScreenState {
+  @override
+  QuizSession get session => _difficultySession;
+
+  late final QuizSession _difficultySession = QuizSession.withDifficulty(
+    widget.roster,
+    difficulty: (widget as DifficultyQuizScreen).difficulty,
+  );
+}
+
+class DailyQuizScreen extends QuizScreen {
+  const DailyQuizScreen({
+    super.key,
+    required super.roster,
+    required this.challenge,
+  });
+
+  final DailyChallenge challenge;
+
+  @override
+  State<QuizScreen> createState() => _DailyQuizScreenState();
+}
+
+class _DailyQuizScreenState extends _QuizScreenState {
+  @override
+  QuizSession get session => _dailySession;
+
+  late final DailyQuizSession _dailySession = DailyQuizSession(
+    widget.roster,
+    (widget as DailyQuizScreen).challenge,
+  );
 }

@@ -5,6 +5,7 @@ import '../roster/roster_repository.dart';
 import '../roster/widgets/player_portrait.dart';
 import 'quiz_screen.dart';
 import 'quiz_session.dart';
+import 'daily_challenge.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({super.key, required this.roster, required this.session});
@@ -49,6 +50,48 @@ class ResultsScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 24),
+              if (session is DailyQuizSession) ...[
+                Text(
+                  'Daily challenge • ${(session as DailyQuizSession).challenge.label} UTC',
+                  textAlign: TextAlign.center,
+                ),
+                FilledButton(
+                  onPressed: () => Navigator.of(context).pushReplacement(
+                    MaterialPageRoute<void>(
+                      builder: (_) => DailyQuizScreen(
+                        roster: roster,
+                        challenge: (session as DailyQuizSession).challenge,
+                      ),
+                    ),
+                  ),
+                  child: const Text('Replay this daily challenge →'),
+                ),
+                const Text(
+                  'Or start a random round below.',
+                  textAlign: TextAlign.center,
+                ),
+              ],
+              Text(
+                '${session.difficulty.label} difficulty',
+                textAlign: TextAlign.center,
+              ),
+              if (session.difficulty != QuizDifficulty.medium)
+                FilledButton(
+                  onPressed: () => Navigator.of(context).pushReplacement(
+                    MaterialPageRoute<void>(
+                      builder: (_) => DifficultyQuizScreen(
+                        roster: roster,
+                        difficulty: session.difficulty,
+                      ),
+                    ),
+                  ),
+                  child: Text('Play ${session.difficulty.label} again →'),
+                ),
+              if (session.difficulty != QuizDifficulty.medium)
+                const Text(
+                  'Or play the original Medium round below.',
+                  textAlign: TextAlign.center,
+                ),
               FilledButton(
                 onPressed: () => Navigator.of(context).pushReplacement(
                   MaterialPageRoute<void>(

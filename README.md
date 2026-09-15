@@ -35,6 +35,7 @@ On this computer Flutter is installed at `C:\Users\jackj\develop\flutter`. Until
 
 - All 32 teams with searchable selection, AFC/NFC filters, and dated roster snapshots.
 - 10 distinct random players, four unique same-team choices each.
+- Additional Easy (2 choices) and Hard (6 choices) start buttons; the original quiz is Medium. Results offer replay at the selected level or the original Medium round.
 - Answers lock after selection; correct answer is shown immediately.
 - Score, full answer review, replay, and exit confirmation.
 - Offline play; no account, API key, analytics, or backend required.
@@ -103,6 +104,11 @@ flutter build apk --debug
 GitHub Actions runs the checks and builds described in the course submission section above.
 
 ## Next milestones
+
+### Daily challenge
+
+Use the calendar button in the team screen's top bar, then **Play daily challenge**, for a dated, 10-question Medium round. The team changes at midnight UTC; questions and choices repeat for the same date and bundled roster, including after restarting the app. Results include a replay button for that specific day. Updated roster data can change the questions. Attempts are unlimited and daily scores are not saved between app launches.
+
 
 1. Verify a full round on an Android emulator or phone.
 2. Confirm photo permissions for the intended distribution.

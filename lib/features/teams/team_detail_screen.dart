@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/app_theme.dart';
 import '../quiz/quiz_screen.dart';
+import '../quiz/quiz_session.dart';
 import '../roster/roster_repository.dart';
 import 'team.dart';
 
@@ -125,6 +126,35 @@ class _TeamDetailScreenState extends State<TeamDetailScreen> {
                     ),
                   ),
                   const SizedBox(height: 20),
+                  const Text(
+                    'CHOOSE DIFFICULTY',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Easy: 2 choices • Medium: 4 choices • Hard: 6 choices',
+                  ),
+                  const SizedBox(height: 12),
+                  for (final difficulty in [
+                    QuizDifficulty.easy,
+                    QuizDifficulty.hard,
+                  ])
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: OutlinedButton(
+                        onPressed: () => Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (_) => DifficultyQuizScreen(
+                              roster: roster,
+                              difficulty: difficulty,
+                            ),
+                          ),
+                        ),
+                        child: Text('Start ${difficulty.label} quiz →'),
+                      ),
+                    ),
+                  const Text('Medium • Original quiz'),
+                  const SizedBox(height: 8),
                   FilledButton(
                     onPressed: () => Navigator.of(context).push(
                       MaterialPageRoute<void>(

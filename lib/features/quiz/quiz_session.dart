@@ -3,6 +3,16 @@ import 'dart:math';
 import '../roster/player.dart';
 import '../roster/roster_repository.dart';
 
+enum QuizDifficulty {
+  easy('Easy', 2),
+  medium('Medium', 4),
+  hard('Hard', 6);
+
+  const QuizDifficulty(this.label, this.optionCount);
+  final String label;
+  final int optionCount;
+}
+
 class QuizQuestion {
   QuizQuestion(this.player, List<Player> options)
     : options = List.unmodifiable(options);
@@ -12,6 +22,31 @@ class QuizQuestion {
 
 /// Pure Dart quiz rules, independent of Flutter and data providers.
 class QuizSession {
+  QuizDifficulty get difficulty => _difficulty;
+  QuizDifficulty _difficulty = QuizDifficulty.medium;
+
+  QuizSession.withDifficulty(
+    Roster roster, {
+    required QuizDifficulty difficulty,
+    Random? random,
+  }) {
+    _difficulty = difficulty;
+    final rng = random ?? Random();
+    final pool = List<Player>.of(roster.players)..shuffle(rng);
+    questions = List.unmodifiable(
+      pool.take(10).map((player) {
+        final distractors =
+            roster.players.where((p) => p.id != player.id).toList()
+              ..shuffle(rng);
+        final options = [
+          player,
+          ...distractors.take(difficulty.optionCount - 1),
+        ]..shuffle(rng);
+        return QuizQuestion(player, options);
+      }),
+    );
+  }
+
   QuizSession(Roster roster, {Random? random}) {
     final rng = random ?? Random();
     final pool = List<Player>.of(roster.players)..shuffle(rng);
