@@ -4,6 +4,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:do_you_know_ball/app.dart';
+import 'package:do_you_know_ball/features/quiz/quiz_screen.dart';
+import 'package:do_you_know_ball/features/quiz/quiz_session.dart';
 import 'package:do_you_know_ball/features/roster/roster_repository.dart';
 import 'package:do_you_know_ball/features/teams/team.dart';
 
@@ -45,7 +47,13 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('team-PIT')));
     await tester.pumpAndSettle();
+    await tapVisible(tester, find.text('Hard'));
     await tapVisible(tester, find.text('Start Steelers quiz →'));
+    expect(
+      tester.widget<QuizScreen>(find.byType(QuizScreen)).difficulty,
+      QuizDifficulty.hard,
+    );
+    await tapVisible(tester, find.byKey(const ValueKey('answer-5')));
     for (var i = 0; i < 10; i++) {
       await tapVisible(tester, find.byKey(const ValueKey('answer-0')));
       expect(
@@ -62,6 +70,10 @@ void main() {
     }
     expect(find.text('The final whistle'), findsOneWidget);
     await tapVisible(tester, find.text('Play another round →'));
+    expect(
+      tester.widget<QuizScreen>(find.byType(QuizScreen)).difficulty,
+      QuizDifficulty.hard,
+    );
     expect(find.text('QUESTION 1 / 10'), findsOneWidget);
     expect(find.text('0 correct'), findsOneWidget);
     await tester.tap(find.byTooltip('Leave quiz'));

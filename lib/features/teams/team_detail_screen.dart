@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/app_theme.dart';
 import '../quiz/quiz_screen.dart';
+import '../quiz/quiz_session.dart';
 import '../roster/roster_repository.dart';
 import 'team.dart';
 
@@ -20,6 +21,7 @@ class TeamDetailScreen extends StatefulWidget {
 class _TeamDetailScreenState extends State<TeamDetailScreen> {
   late Future<Roster> _roster;
   bool _refreshing = false;
+  QuizDifficulty _difficulty = QuizDifficulty.medium;
   @override
   void initState() {
     super.initState();
@@ -125,10 +127,37 @@ class _TeamDetailScreenState extends State<TeamDetailScreen> {
                     ),
                   ),
                   const SizedBox(height: 20),
+                  const Text(
+                    'DIFFICULTY',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 2,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      for (final difficulty in QuizDifficulty.values)
+                        ChoiceChip(
+                          label: Text(difficulty.label),
+                          selected: _difficulty == difficulty,
+                          onSelected: (_) =>
+                              setState(() => _difficulty = difficulty),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    '${_difficulty.optionCount} answer choices per player. Portrait, jersey number, and position clues included.',
+                  ),
+                  const SizedBox(height: 20),
                   FilledButton(
                     onPressed: () => Navigator.of(context).push(
                       MaterialPageRoute<void>(
-                        builder: (_) => QuizScreen(roster: roster),
+                        builder: (_) =>
+                            QuizScreen(roster: roster, difficulty: _difficulty),
                       ),
                     ),
                     child: Text('Start ${widget.team.nickname} quiz →'),

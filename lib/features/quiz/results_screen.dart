@@ -45,14 +45,17 @@ class ResultsScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               Text(
-                '${roster.team} • Round complete',
+                '${roster.team} • ${session.difficulty.label} • Round complete',
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 24),
               FilledButton(
                 onPressed: () => Navigator.of(context).pushReplacement(
                   MaterialPageRoute<void>(
-                    builder: (_) => QuizScreen(roster: roster),
+                    builder: (_) => QuizScreen(
+                      roster: roster,
+                      difficulty: session.difficulty,
+                    ),
                   ),
                 ),
                 child: const Text('Play another round →'),

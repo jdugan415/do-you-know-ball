@@ -7,14 +7,22 @@ import 'quiz_session.dart';
 import 'results_screen.dart';
 
 class QuizScreen extends StatefulWidget {
-  const QuizScreen({super.key, required this.roster});
+  const QuizScreen({
+    super.key,
+    required this.roster,
+    this.difficulty = QuizDifficulty.medium,
+  });
   final Roster roster;
+  final QuizDifficulty difficulty;
   @override
   State<QuizScreen> createState() => _QuizScreenState();
 }
 
 class _QuizScreenState extends State<QuizScreen> {
-  late final QuizSession session = QuizSession(widget.roster);
+  late final QuizSession session = QuizSession(
+    widget.roster,
+    difficulty: widget.difficulty,
+  );
   bool _leaving = false;
   bool _dialogOpen = false;
 
@@ -88,6 +96,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       Text('${session.score} correct'),
                     ],
                   ),
+                  Text('${session.difficulty.label} difficulty'),
                   const SizedBox(height: 12),
                   LinearProgressIndicator(
                     value: (session.index + 1) / 10,

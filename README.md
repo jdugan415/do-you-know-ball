@@ -34,7 +34,7 @@ On this computer Flutter is installed at `C:\Users\jackj\develop\flutter`. Until
 ## Version 0.3
 
 - All 32 teams with searchable selection, AFC/NFC filters, and dated roster snapshots.
-- 10 distinct random players, four unique same-team choices each.
+- 10 distinct random players with Easy (2 choices), Medium (4), or Hard (6) difficulty. Choose a level before starting; replay keeps your level.
 - Answers lock after selection; correct answer is shown immediately.
 - Score, full answer review, replay, and exit confirmation.
 - Offline play; no account, API key, analytics, or backend required.
