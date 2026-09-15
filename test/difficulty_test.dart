@@ -56,6 +56,12 @@ void main() {
       await tester.pumpAndSettle();
       await tester.enterText(find.byType(TextField), 'Steelers');
       await tester.pumpAndSettle();
+      await tester.scrollUntilVisible(
+        find.byKey(const ValueKey('team-PIT')),
+        200,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await tester.pumpAndSettle();
       await tapVisible(tester, find.byKey(const ValueKey('team-PIT')));
       await tapVisible(tester, find.text('Start ${difficulty.label} quiz →'));
       expect(find.text('${difficulty.label} difficulty'), findsOneWidget);

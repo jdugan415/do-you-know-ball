@@ -105,6 +105,11 @@ GitHub Actions runs the checks and builds described in the course submission sec
 
 ## Next milestones
 
+### Daily challenge
+
+Use the calendar button in the team screen's top bar, then **Play daily challenge**, for a dated, 10-question Medium round. The team changes at midnight UTC; questions and choices repeat for the same date and bundled roster, including after restarting the app. Results include a replay button for that specific day. Updated roster data can change the questions. Attempts are unlimited and daily scores are not saved between app launches.
+
+
 1. Verify a full round on an Android emulator or phone.
 2. Confirm photo permissions for the intended distribution.
 3. Automate reviewed roster refreshes.
