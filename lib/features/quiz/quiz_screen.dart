@@ -86,8 +86,22 @@ class _QuizScreenState extends State<QuizScreen> {
                           letterSpacing: 1.5,
                         ),
                       ),
-                      Text('${session.score} correct'),
-                    ],
+Row(
+  mainAxisSize: MainAxisSize.min,
+  children: [
+    Text('${session.score} correct'),
+    if (session.currentStreak > 0) ...[
+      const SizedBox(width: 12),
+      Text(
+        '🔥 ${session.currentStreak} streak',
+        style: const TextStyle(
+          fontWeight: FontWeight.w800,
+          color: gold,
+        ),
+      ),
+    ],
+  ],
+),                    ],
                   ),
                   const SizedBox(height: 12),
                   Text('${session.difficulty.label} difficulty'),
