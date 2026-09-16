@@ -223,16 +223,39 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                     ),
                   if (session.answered) ...[
-                    const SizedBox(height: 8),
-                    Semantics(
-                      liveRegion: true,
-                      child: Text(
-                        correct
-                            ? 'Correct. You know your roster!'
-                            : 'The answer is ${question.player.name}.',
-                        style: const TextStyle(fontSize: 16),
-                      ),
-                    ),
+                   const SizedBox(height: 8),
+Semantics(
+  liveRegion: true,
+  child: Container(
+    padding: const EdgeInsets.all(16),
+    decoration: BoxDecoration(
+      color: correct
+          ? const Color(0xFF234938)
+          : const Color(0xFF522B2D),
+      borderRadius: BorderRadius.circular(16),
+    ),
+    child: Row(
+      children: [
+        Icon(
+          correct ? Icons.celebration : Icons.info_outline,
+          color: correct ? const Color(0xFF70D9A5) : Colors.white,
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Text(
+            correct
+                ? 'Great job! You got it right!'
+                : 'The answer is ${question.player.name}.',
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ),
+      ],
+    ),
+  ),
+),
                     const SizedBox(height: 16),
                     FilledButton(
                       onPressed: () {
