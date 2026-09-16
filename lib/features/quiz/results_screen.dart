@@ -46,10 +46,43 @@ class ResultsScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               Text(
-                '${roster.team} • Round complete',
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 24),
+  '${roster.team} • Round complete',
+  textAlign: TextAlign.center,
+),
+const SizedBox(height: 16),
+Container(
+  padding: const EdgeInsets.symmetric(
+    horizontal: 20,
+    vertical: 14,
+  ),
+  decoration: BoxDecoration(
+    color: const Color(0xFF1C1F20),
+    borderRadius: BorderRadius.circular(16),
+    border: Border.all(
+      color: gold,
+      width: 1,
+    ),
+  ),
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      const Text(
+        '🔥',
+        style: TextStyle(fontSize: 24),
+      ),
+      const SizedBox(width: 10),
+      Text(
+        'Best streak: ${session.bestStreak}',
+        style: const TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.w800,
+          color: gold,
+        ),
+      ),
+    ],
+  ),
+),
+const SizedBox(height: 24),
               if (session is DailyQuizSession) ...[
                 Text(
                   'Daily challenge • ${(session as DailyQuizSession).challenge.label} UTC',
