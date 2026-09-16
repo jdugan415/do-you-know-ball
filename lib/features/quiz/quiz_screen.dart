@@ -236,10 +236,27 @@ Semantics(
     ),
     child: Row(
       children: [
-        Icon(
-          correct ? Icons.celebration : Icons.info_outline,
-          color: correct ? const Color(0xFF70D9A5) : Colors.white,
+        correct
+    ? TweenAnimationBuilder<double>(
+        tween: Tween(begin: 0.5, end: 1.0),
+        duration: const Duration(milliseconds: 600),
+        curve: Curves.elasticOut,
+        builder: (context, scale, child) {
+          return Transform.scale(
+            scale: scale,
+            child: child,
+          );
+        },
+        child: const Icon(
+          Icons.celebration,
+          color: Color(0xFF70D9A5),
+          size: 32,
         ),
+      )
+    : const Icon(
+        Icons.info_outline,
+        color: Colors.white,
+      ),
         const SizedBox(width: 12),
         Expanded(
           child: Text(
