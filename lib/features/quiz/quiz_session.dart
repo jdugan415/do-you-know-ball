@@ -64,10 +64,10 @@ class QuizSession {
   final List<String> _answers = [];
   int _index = 0;
   int _currentStreak = 0;
-int _bestStreak = 0;
+  int _bestStreak = 0;
 
-int get currentStreak => _currentStreak;
-int get bestStreak => _bestStreak;
+  int get currentStreak => _currentStreak;
+  int get bestStreak => _bestStreak;
   int get index => _index;
   QuizQuestion get current => questions[_index];
   bool get answered => _answers.length > _index;
@@ -78,23 +78,23 @@ int get bestStreak => _bestStreak;
       Iterable<int>.generate(_answers.length)
           .where((i) => questions[i].player.id == _answers[i])
           .length;
- bool answer(String id) {
-  if (answered || !current.options.any((p) => p.id == id)) return false;
+  bool answer(String id) {
+    if (answered || !current.options.any((p) => p.id == id)) return false;
 
-  _answers.add(id);
+    _answers.add(id);
 
-  if (id == current.player.id) {
-    _currentStreak++;
+    if (id == current.player.id) {
+      _currentStreak++;
 
-    if (_currentStreak > _bestStreak) {
-      _bestStreak = _currentStreak;
+      if (_currentStreak > _bestStreak) {
+        _bestStreak = _currentStreak;
+      }
+    } else {
+      _currentStreak = 0;
     }
-  } else {
-    _currentStreak = 0;
-  }
 
-  return true;
-}
+    return true;
+  }
 
   bool next() {
     if (!answered || complete) return false;

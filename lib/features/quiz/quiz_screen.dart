@@ -86,22 +86,23 @@ class _QuizScreenState extends State<QuizScreen> {
                           letterSpacing: 1.5,
                         ),
                       ),
-Row(
-  mainAxisSize: MainAxisSize.min,
-  children: [
-    Text('${session.score} correct'),
-    if (session.currentStreak > 0) ...[
-      const SizedBox(width: 12),
-      Text(
-        '🔥 ${session.currentStreak} streak',
-        style: const TextStyle(
-          fontWeight: FontWeight.w800,
-          color: gold,
-        ),
-      ),
-    ],
-  ],
-),                    ],
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('${session.score} correct'),
+                          if (session.currentStreak > 0) ...[
+                            const SizedBox(width: 12),
+                            Text(
+                              '🔥 ${session.currentStreak} streak',
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w800,
+                                color: gold,
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 12),
                   Text('${session.difficulty.label} difficulty'),
@@ -237,56 +238,56 @@ Row(
                       ),
                     ),
                   if (session.answered) ...[
-                   const SizedBox(height: 8),
-Semantics(
-  liveRegion: true,
-  child: Container(
-    padding: const EdgeInsets.all(16),
-    decoration: BoxDecoration(
-      color: correct
-          ? const Color(0xFF234938)
-          : const Color(0xFF522B2D),
-      borderRadius: BorderRadius.circular(16),
-    ),
-    child: Row(
-      children: [
-        correct
-    ? TweenAnimationBuilder<double>(
-        tween: Tween(begin: 0.5, end: 1.0),
-        duration: const Duration(milliseconds: 600),
-        curve: Curves.elasticOut,
-        builder: (context, scale, child) {
-          return Transform.scale(
-            scale: scale,
-            child: child,
-          );
-        },
-        child: const Icon(
-          Icons.celebration,
-          color: Color(0xFF70D9A5),
-          size: 32,
-        ),
-      )
-    : const Icon(
-        Icons.info_outline,
-        color: Colors.white,
-      ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: Text(
-            correct
-                ? 'Great job! You got it right!'
-                : 'The answer is ${question.player.name}.',
-            style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        ),
-      ],
-    ),
-  ),
-),
+                    const SizedBox(height: 8),
+                    Semantics(
+                      liveRegion: true,
+                      child: Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: correct
+                              ? const Color(0xFF234938)
+                              : const Color(0xFF522B2D),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Row(
+                          children: [
+                            correct
+                                ? TweenAnimationBuilder<double>(
+                                    tween: Tween(begin: 0.5, end: 1.0),
+                                    duration: const Duration(milliseconds: 600),
+                                    curve: Curves.elasticOut,
+                                    builder: (context, scale, child) {
+                                      return Transform.scale(
+                                        scale: scale,
+                                        child: child,
+                                      );
+                                    },
+                                    child: const Icon(
+                                      Icons.celebration,
+                                      color: Color(0xFF70D9A5),
+                                      size: 32,
+                                    ),
+                                  )
+                                : const Icon(
+                                    Icons.info_outline,
+                                    color: Colors.white,
+                                  ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Text(
+                                correct
+                                    ? 'Great job! You got it right!'
+                                    : 'The answer is ${question.player.name}.',
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                     const SizedBox(height: 16),
                     FilledButton(
                       onPressed: () {
