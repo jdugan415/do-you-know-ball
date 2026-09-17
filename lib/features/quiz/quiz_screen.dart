@@ -73,31 +73,31 @@ class _QuizScreenState extends State<QuizScreen> {
               child: ListView(
                 padding: const EdgeInsets.all(24),
                 children: [
-               Wrap(
-  alignment: WrapAlignment.spaceBetween,
-  crossAxisAlignment: WrapCrossAlignment.center,
-  spacing: 12,
-  runSpacing: 8,
-  children: [
-    Text(
-      'QUESTION ${session.index + 1} / 10',
-      style: const TextStyle(
-        color: gold,
-        fontWeight: FontWeight.w800,
-        letterSpacing: 1.5,
-      ),
-    ),
-    Text('${session.score} correct'),
-    if (session.currentStreak > 0)
-      Text(
-        '🔥 ${session.currentStreak} streak',
-        style: const TextStyle(
-          fontWeight: FontWeight.w800,
-          color: gold,
-        ),
-      ),
-  ],
-),
+                  Wrap(
+                    alignment: WrapAlignment.spaceBetween,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    spacing: 12,
+                    runSpacing: 8,
+                    children: [
+                      Text(
+                        'QUESTION ${session.index + 1} / 10',
+                        style: const TextStyle(
+                          color: gold,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 1.5,
+                        ),
+                      ),
+                      Text('${session.score} correct'),
+                      if (session.currentStreak > 0)
+                        Text(
+                          '🔥 ${session.currentStreak} streak',
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w800,
+                            color: gold,
+                          ),
+                        ),
+                    ],
+                  ),
                   const SizedBox(height: 12),
                   Text('${session.difficulty.label} difficulty'),
                   if (session is DailyQuizSession)
