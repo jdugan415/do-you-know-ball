@@ -50,35 +50,35 @@ class ResultsScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 16),
-             Container(
-  padding: const EdgeInsets.symmetric(
-    horizontal: 12,
-    vertical: 14,
-  ),
-  decoration: BoxDecoration(
-    color: const Color(0xFF1C1F20),
-    borderRadius: BorderRadius.circular(16),
-    border: Border.all(color: gold, width: 1),
-  ),
-  child: Row(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      const Text('🔥', style: TextStyle(fontSize: 24)),
-      const SizedBox(width: 8),
-      Flexible(
-        child: Text(
-          'Best streak: ${session.bestStreak}',
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w800,
-            color: gold,
-          ),
-        ),
-      ),
-    ],
-  ),
-),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 14,
+                ),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF1C1F20),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: gold, width: 1),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text('🔥', style: TextStyle(fontSize: 24)),
+                    const SizedBox(width: 8),
+                    Flexible(
+                      child: Text(
+                        'Best streak: ${session.bestStreak}',
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w800,
+                          color: gold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               const SizedBox(height: 24),
               if (session is DailyQuizSession) ...[
                 Text(
@@ -150,12 +150,12 @@ class ResultsScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
-  child: PlayerPortrait(
-    player: question.player,
-    size: 48,
-    revealName: true,
-  ),
-),
+                          child: PlayerPortrait(
+                            player: question.player,
+                            size: 48,
+                            revealName: true,
+                          ),
+                        ),
                         const SizedBox(width: 10),
                         Icon(
                           session.answers[i] == question.player.id
