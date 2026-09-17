@@ -61,21 +61,23 @@ class ResultsScreen extends StatelessWidget {
                   border: Border.all(color: gold, width: 1),
                 ),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text('🔥', style: TextStyle(fontSize: 24)),
-                    const SizedBox(width: 10),
-                    Text(
-                      'Best streak: ${session.bestStreak}',
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w800,
-                        color: gold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    const Text('🔥', style: TextStyle(fontSize: 24)),
+    const SizedBox(width: 10),
+    Flexible(
+      child: Text(
+        'Best streak: ${session.bestStreak}',
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.w800,
+          color: gold,
+        ),
+      ),
+    ),
+  ],
+),
               const SizedBox(height: 24),
               if (session is DailyQuizSession) ...[
                 Text(
