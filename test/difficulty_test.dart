@@ -66,15 +66,26 @@ void main() {
       await tapVisible(tester, find.text('Start ${difficulty.label} quiz →'));
       expect(find.text('${difficulty.label} difficulty'), findsOneWidget);
       for (var i = 0; i < 10; i++) {
-        await tapVisible(
-          tester,
-          find.byKey(ValueKey('answer-${difficulty.optionCount - 1}')),
-        );
-        await tapVisible(
-          tester,
-          find.text(i == 9 ? 'See results →' : 'Next player →'),
-        );
-      }
+  await tapVisible(
+    tester,
+    find.byKey(ValueKey('answer-${difficulty.optionCount - 1}')),
+  );
+
+  final afterAnswer = tester.takeException();
+  if (afterAnswer != null) {
+    fail('OVERFLOW AFTER ANSWERING QUESTION ${i + 1}: $afterAnswer');
+  }
+
+  await tapVisible(
+    tester,
+    find.text(i == 9 ? 'See results →' : 'Next player →'),
+  );
+
+  final afterNext = tester.takeException();
+  if (afterNext != null) {
+    fail('OVERFLOW AFTER LEAVING QUESTION ${i + 1}: $afterNext');
+  }
+}
       await tapVisible(tester, find.text('Play ${difficulty.label} again →'));
       expect(
         tester
@@ -83,7 +94,9 @@ void main() {
         difficulty,
       );
       expect(find.text('0 correct'), findsOneWidget);
-      expect(tester.takeException(), isNull);
-    });
-  }
+final exception = tester.takeException();
+if (exception != null) {
+  debugPrint('ACTUAL FLUTTER ERROR: $exception');
+}
+expect(tester.takeException(), isNull);  }
 }
