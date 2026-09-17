@@ -110,6 +110,7 @@ void main() {
         find.text(i == 9 ? 'See results →' : 'Next player →'),
       );
     }
+    await tester.scrollUntilVisible(find.text(label), 200);
     expect(find.text(label), findsOneWidget);
     await tapVisible(tester, find.text('Replay this daily challenge →'));
     final replay = tester.widget<DailyQuizScreen>(find.byType(DailyQuizScreen));
